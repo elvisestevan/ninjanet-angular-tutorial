@@ -8,11 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   title = "Title works!";
-  myString = "i love binding"
+  myString = "i love binding";
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  alertMe() {
+    alert("You clicked me! Thanks!");
   }
 
 }
