@@ -3,7 +3,8 @@
 </p>
 <ng-content></ng-content>
 
-<input value="{{myString}}" />
-<input [value]="myString" />
+<input [(ngModel)]="ninja.name" />
+<input [(ngModel)]="ninja.belt" />
 
-<button (click)="alertMe()">Click me!</button>
+<p>{{ninja.name}}</p>
+<p>{{ninja.belt}}</p>

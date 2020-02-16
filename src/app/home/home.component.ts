@@ -10,6 +10,11 @@ export class HomeComponent implements OnInit {
   title = "Title works!";
   myString = "i love binding";
 
+  ninja = {
+    name: "Yoshi",
+    belt: "Black"
+  }
+
   constructor() { }
 
   ngOnInit() {
