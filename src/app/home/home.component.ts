@@ -7,18 +7,11 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  title = "Title works!";
-  myString = "i love binding";
-
-  @Input() ninja;
+  @Input() ninja: any;
 
   constructor() { }
 
-  ngOnInit() {
-  }
-
-  alertMe() {
-    alert("You clicked me! Thanks!");
+  ngOnInit(): void {
   }
 
 }

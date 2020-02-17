@@ -6,10 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'ninjanet-directory';
 
   ninja = {
-    name: "Yoshi App",
-    belt: "Black App"
-  }
+    name: "Ryu",
+    belt: "Red"
+  };
+
 }
