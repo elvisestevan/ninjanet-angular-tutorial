@@ -1,9 +1,7 @@
 <p [ngClass]="classes">directory works! Name: {{name}}</p>
 
-<p *ngIf="true">Only show if it is true</p>
+<h2>Listing</h2>
 
-<style>
-    .blue{color:blue;}
-    .red{color:red;}
-    .underline{text-decoration: underline;}
-</style>
+<ul id="listing">
+    <li *ngFor="let item of items">{{item}}</li>
+</ul>

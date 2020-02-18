@@ -9,6 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 export class DirectoryComponent implements OnInit {
 
   name: string;
+  items = ["João", "Maria", "José"];
 
   classes = {"blue": true, "red": false, "underline": true}
 
