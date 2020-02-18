@@ -13,4 +13,8 @@ export class AppComponent {
     belt: "Red"
   };
 
+  yell(e) {
+    alert("I am yelling: ");
+  }
+
 }
