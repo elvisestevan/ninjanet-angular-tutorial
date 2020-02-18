@@ -1,1 +1,9 @@
-<p>directory works! Name: {{name}}</p>
+<p [ngClass]="classes">directory works! Name: {{name}}</p>
+
+<p *ngIf="true">Only show if it is true</p>
+
+<style>
+    .blue{color:blue;}
+    .red{color:red;}
+    .underline{text-decoration: underline;}
+</style>
