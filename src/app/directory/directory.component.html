@@ -1,7 +1,12 @@
-<p [ngClass]="classes">directory works! Name: {{name}}</p>
+<form id="filter">
+    <label>Filter people by name</label>
+    <input name="term" type="text" [(ngModel)]="term" />
+</form>
 
 <h2>Listing</h2>
 
 <ul id="listing">
-    <li *ngFor="let item of items">{{item | uppercase}}</li>
+    <li *ngFor="let item of items | filter:term">{{item.name | uppercase}}</li>
 </ul>
+
+{{term}}ss
