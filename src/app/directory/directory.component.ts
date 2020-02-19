@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { LoggingService } from '../logging.service';
 
 @Component({
   selector: 'app-directory',
@@ -19,12 +20,13 @@ export class DirectoryComponent implements OnInit {
 
   classes = {"blue": true, "red": false, "underline": true}
 
-  constructor(private route: ActivatedRoute) {
+  constructor(private route: ActivatedRoute, private logger: LoggingService) {
     this.name = route.snapshot.params['name'];
   }
 
 
   ngOnInit(): void {
+    this.logger.log(DirectoryComponent.name);
   }
 
 }
